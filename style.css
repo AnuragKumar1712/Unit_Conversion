@@ -1,0 +1,362 @@
+body {
+    font-size: 20px;
+    background: linear-gradient(245.59deg, #6f2232 0%, #d48d63 28.53%, #c3073f 75.52%);
+    text-decoration: none;
+}
+
+header {
+    font-size: 75px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    background: #201c1d;
+    color: #f7f1f2;
+}
+
+.buttons {
+    position: relative;
+    top: 10px;
+    height: 25px;
+    padding: 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button {
+    height: 50px;
+    width: 120px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    align-items: center;
+    background: #950740;
+    color: #f7f1f2;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    background: #201c1d;
+    transition: .5s;
+}
+
+#all-conversion-sections {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+#temperature {
+    display: block;
+}
+
+#weight {
+    display: none;
+}
+
+#distance {
+    display: none;
+}
+
+.thermometer {
+    padding: 0% 35%;
+}
+
+.weighto {
+    padding: 0% 35%;
+}
+
+.speedo {
+    padding: 0% 35%;
+}
+
+img {
+    width: 300px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 45px;
+    color: #f7f1f2;
+    font-weight: 700px;
+}
+
+article {
+    font-size: 30px;
+    color: #f7f1f2;
+    font-weight: 700px;
+    padding: 40px 25% 10px 25%;
+}
+
+fieldset {
+    border-color: #950740;
+    border-width: 20px;
+    text-align: end;
+}
+
+.field-content {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    padding-right: 15%;
+}
+
+.field-content input {
+    height: 30px;
+    font-size: 20px;
+    color: #ededed;
+    border: 3px solid #201c1d;
+    border-radius: 30px;
+    text-align: center;
+    background: transparent;
+}
+
+.field-content input::placeholder {
+    color: #f7f1f2;
+    opacity: .8;
+}
+
+.field-content #convert1 {
+    background-color: #201c1d;
+    color: #ededed;
+    border: 2px solid transparent;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.9s;
+    justify-content: center;
+}
+
+#clear,
+#clear2,
+#clear3 {
+    background-color: #201c1d;
+    color: #ededed;
+    border: 2px solid transparent;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: 0.9s;
+}
+
+.field-content #convert1:hover,
+#clear:hover,
+#clear2:hover,
+#clear3:hover {
+    color: #c3073f;
+    background-color: #f7f1f2;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: .9s;
+}
+
+aside {
+    font-size: 22px;
+}
+
+
+@media (max-width: 990px) {
+    .thermometer {
+        padding: 0 46vh;
+    }
+
+    .weighto {
+        padding: 0 46vh;
+    }
+
+    .speedo {
+        padding: 0 46vh;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 200px;
+        height: 50vh;
+    }
+
+    .thermometer {
+        padding: 0 36vh;
+    }
+
+    .weighto {
+        padding: 0 36vh;
+    }
+
+    .speedo {
+        padding: 0 36vh;
+    }
+
+    figcaption {
+        font-size: 30px;
+    }
+
+    article {
+        font-size: 28px;
+    }
+
+    .field-content {
+        padding-right: 5%;
+        font-size: 26px;
+    }
+
+    .field-content input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    .field-content #convert1 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #clear,
+    #clear2,
+    #clear3 {
+        font-size: 18px;
+        padding: 9px 9px;
+    }
+
+    aside {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 40px;
+    }
+
+    .buttons button {
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .thermometer {
+        padding-left: 10vh;
+    }
+
+    .weighto {
+        padding: 0 10vh;
+    }
+
+    .speedo {
+        padding: 0 10vh;
+    }
+
+    img {
+        width: 200px;
+        height: 40vh;
+    }
+
+    figcaption {
+        font-size: 22px;
+    }
+
+    article {
+        font-size: 22px;
+        padding: 40px 0% 10px 0%;
+    }
+
+    fieldset {
+        border-width: 14px;
+        padding-left: 0;
+    }
+
+    .field-content {
+        line-height: 45px;
+        padding-right: 0%;
+        font-size: 22px;
+    }
+
+    .field-content input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    .field-content #convert1 {
+        font-size: 17px;
+        padding: 0px 15px;
+    }
+
+    #clear,
+    #clear2,
+    #clear3 {
+        font-size: 17px;
+        padding: 2px 8px;
+    }
+
+    aside {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 380px) {
+    header {
+        font-size: 35px;
+    }
+
+    .buttons button {
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .thermometer {
+        padding-left: 2vh;
+    }
+
+    .weighto {
+        padding: 0 2vh;
+    }
+
+    .speedo {
+        padding: 0 2vh;
+    }
+
+    img {
+        height: 35vh;
+    }
+
+    figcaption {
+        font-size: 19px;
+    }
+
+    article {
+        font-size: 20px;
+        padding: 20px 0% 10px 0%;
+    }
+
+    fieldset {
+        border-width: 13px;
+        padding-right: 30px;
+    }
+
+    .field-content {
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .field-content input {
+        height: 20px;
+        font-size: 16px;
+    }
+
+    aside {
+        font-size: 15px;
+    }
+}
